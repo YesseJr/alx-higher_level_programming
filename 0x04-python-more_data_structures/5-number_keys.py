@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-def number_keys(my_dict):
-    return len(a_dictionary.keys())
+def number_keys(a_dictionary):
+    if isinstance(a_dictionary, dict):
+        return len(my_dictionary.keys())
