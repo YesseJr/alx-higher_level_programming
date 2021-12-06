@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     try:
-        value = a / b
+        waython = a / b
     except ZeroDivisionError:
-        value = None
+        waython = None
     finally:
-        print("Inside result: {}".format(value))
-    return value
+        print("Inside result: {}".format(waython))
+    return waython
