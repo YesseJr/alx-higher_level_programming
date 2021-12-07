@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines a class Square by Private instance attribute: size"""
+"""This modul defines class Square with private attribute size and public attribute area"""
 
 
 class Square:
@@ -9,7 +9,7 @@ class Square:
         Args:
             size (int): The size of the new square.
         """
-        
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
