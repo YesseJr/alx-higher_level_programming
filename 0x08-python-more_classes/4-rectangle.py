@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Defines class Rectangle."""
+"""
+    Module containing the ``Rectangle`` class
+"""
 
 
 class Rectangle:
@@ -7,7 +9,7 @@ class Rectangle:
         Rectangle Class
     """
 
-def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """ Initializing an instance of ``Rectangle``
         Args:
             width (int, optional): The width of the ``Rectangle`` instance.
