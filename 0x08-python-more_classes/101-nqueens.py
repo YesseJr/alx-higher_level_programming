@@ -4,6 +4,8 @@
 """
 
 
+import sys
+
 def all_possible(n=4):
     """
     Function to find all possible solutions by placing the first queen on
