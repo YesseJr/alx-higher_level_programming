@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contains class Rectangle with private attribute width and height"""
+"""Defines class Rectangle with private attribute width and height"""
 
 
 class Rectangle:
