@@ -9,7 +9,6 @@ class Rectangle:
         Rectangle Class
     """
 
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -49,10 +48,10 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         """ static method to determine which rectangle is bigger
         Args:
-            rect_1 (:obj:`Rectangle`): A `Rectangle` instance.
-            rect_2 (:obj:`Rectangle`): A `Rectangle` instance.
+            rect_1 (:obj:`Rectangle`): A Rectangle instance.
+            rect_2 (:obj:`Rectangle`): A Rectangle instance.
         Returns:
-            The `Rectangle` instance with the largest area, or rect_1 if both
+            The Rectangle instance with the largest area, or rect_1 if both
             are equal in area.
         """
         if type(rect_1) is not Rectangle:
