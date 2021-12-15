@@ -19,4 +19,4 @@ message1 = "b must be an integer"
     elif not isinstance(b, (int, float)):
         raise TypeError("message1")
     else:
-        return (int(a) + int(b))    
+        return (int(a) + int(b))
