@@ -1,7 +1,12 @@
-# run test with python3 -m doctest -v ./tests/[filename].txt
+The "7-base_geometry" module
+======================
 
-First import method to test
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Using "BaseGeometry" class
+-------------------
+
+Import "BaseGeometry" from the "7-base_geometry" module:
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 SUCCESS CASES:
 
