@@ -4,15 +4,16 @@ This module defines a function that adds attributes to objects.
 """
 
 
-def add_attribute(obj, attribute, value):
+def add_attribute(obj, att, value):
     """
-    Function that adds/modifies an instance attribute if possible.
+    Add a new attribute to an object if possible.
     Args:
-        obj: An instance object.
-        name: Name of the attribute.
-        value: The value of the attribute.
+        att (str): The name of the attribute to add to obj.
+        obj (any): The object to add an attribute to.
+        value (any): The value of att.
+    Raises:
+        TypeError: If the attribute cannot be added.
     """
-    if "__dict__" in dir(obj):
-        setattr(obj, name, value)
-    else:
+    if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
+    setattr(obj, att, value)
