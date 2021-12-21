@@ -6,8 +6,7 @@ This module defines a function that returns int lists of pascal triangle of any 
 
 def pascal_triangle(n):
     """
-    Return:
-        empty list [] if n <= 0
+    Represent Pascal's Triangle of size n.
     """
     if n <= 0:
         return []
