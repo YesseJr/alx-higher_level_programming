@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a function that returns int lists of pascal triangle of any given size
+This module defines a Pascal's Triangle function.
 """
 
 
