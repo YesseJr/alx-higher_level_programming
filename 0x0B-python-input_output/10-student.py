@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 """
-This module defines a class Student.
+This module defines a class Student  that initializes public instance attributes first_name, last_name, and age,
+and has public method to_json that returns dictionary representation
+of requested attributes or all if none were requested.
 """
 
 
 class Student:
     """
-    Represent a student that initializes public instance attributes first_name, last_name, and age,
-and has public method to_json that returns dictionary representation
-of requested attributes or all if none were requested.
-"""
+    Represent a student.
+    """
 
     def __init__(self, first_name, last_name, age):
-        """Initialize a new Student.
+        """
+        Initialize a new Student.
         Args:
             first_name (str): The first name of the student.
             last_name (str): The last name of the student.
@@ -23,7 +24,8 @@ of requested attributes or all if none were requested.
         self.age = age
 
     def to_json(self, attrs=None):
-        """Get a dictionary representation of the Student.
+        """
+        Get a dictionary representation of the Student.
         If attrs is a list of strings, represents only those attributes
         included in the list.
         Args:
