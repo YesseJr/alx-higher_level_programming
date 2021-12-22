@@ -28,7 +28,7 @@ if __name__ == "__main__":
     size = 0
     lines = 0
     status_codes = {}
-    valid_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
+    stat_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
     count = 0
 
     try:
@@ -47,7 +47,7 @@ if __name__ == "__main__":
                 pass
 
             try:
-                if line[-2] in valid_codes:
+                if line[-2] in stat_codes:
                     if status_codes.get(line[-2], -1) == -1:
                         status_codes[line[-2]] = 1
                     else:
