@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script reads stdin line by line and computes metrics
+This module defines a script that reads stdin line by line and computes metrics
 
 Each 10 lines and after a keyboard interruption (CTRL + C),
 prints those statistics since the beginning:
