@@ -1,0 +1,6 @@
+# PYTHON ALMOST A CIRCLE.
+
+#### Author: Waython Yesse
+#### Occupation: Software Engineering Student at ALX
+#### Address: waythonny@yahoo.com
+#### Year: 2021 December 29
