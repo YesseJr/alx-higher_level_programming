@@ -146,33 +146,4 @@ class Base:
                 if cls.__name__ == "Rectangle":
                     alx = cls(1, 1)
                 alx.update(**dictionary)
-                return alx
-
-            @classmethod
-            def draw(cls, list_rectangles, list_squares):
-                """
-               Draw Rectangles and Squares using the turtle module.
-               Args:
-               list_rectangles (list): A list of Rectangle objects to draw.
-               list_squares (list): A list of Square objects to draw.
-               """
-            cellie = turtle.Screen()
-            newyear = turtle.Pen()
-            figures = list_rectangles + list_squares
-
-            for fig in figures:
-               newyear.up()
-               newyear.goto(fig.x, fig.y)
-               newyear.down()
-               newyear.forward(fig.width)
-               newyear.right(90)
-               newyear.forward(fig.height)
-               newyear.right(90)
-               newyear.forward(fig.width)
-               newyear.right(90)
-               newyear.forward(fig.height)
-               newyear.right(90)
-
-               cellie.exitonclick()
-        
-         
+                return alx   
