@@ -6,7 +6,7 @@ It contains private class __nb_objects and class constructor __init__
 
 import json
 import csv
-
+import turtle
 
 class Base:
     """
@@ -27,6 +27,7 @@ class Base:
        load_from_file(cls)
        load_from_file_csv(cls)
        create(cls, **dictionary)
+       draw(cls, list_rectangles, list_squares):
     """
     __nb_objects = 0
 
@@ -141,8 +142,37 @@ class Base:
                 Returns instance with attributes already set
                 """
                 if cls.__name__ == "Square":
-                    new = cls(1)
+                    alx = cls(1)
                 if cls.__name__ == "Rectangle":
-                    new = cls(1, 1)
-                new.update(**dictionary)
-                return new
+                    alx = cls(1, 1)
+                alx.update(**dictionary)
+                return alx
+
+            @classmethod
+            def draw(cls, list_rectangles, list_squares):
+                """
+               Draw Rectangles and Squares using the turtle module.
+               Args:
+               list_rectangles (list): A list of Rectangle objects to draw.
+               list_squares (list): A list of Square objects to draw.
+               """
+            cellie = turtle.Screen()
+            newyear = turtle.Pen()
+            figures = list_rectangles + list_squares
+
+            for fig in figures:
+               newyear.up()
+               newyear.goto(fig.x, fig.y)
+               newyear.down()
+               newyear.forward(fig.width)
+               newyear.right(90)
+               newyear.forward(fig.height)
+               newyear.right(90)
+               newyear.forward(fig.width)
+               newyear.right(90)
+               newyear.forward(fig.height)
+               newyear.right(90)
+
+               cellie.exitonclick()
+        
+         
