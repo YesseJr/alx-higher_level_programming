@@ -17,4 +17,7 @@
 * Suggested Style Guide: SQLStyle
 * Usage: cat [filename] | mysql -hlocalhost -uroot -p [database]
 
-### Author: Waython Yesse
+#### Author: Waython Yesse
+#### Occupation; Software Engineering Student at ALX
+#### Address: waythonny@yahoo.command
+#### Year: 2022 February 02
