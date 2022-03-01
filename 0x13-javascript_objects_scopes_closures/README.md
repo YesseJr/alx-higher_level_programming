@@ -1,0 +1,2 @@
+# JAVASCRIPT
+* Objects, scopes, closures.
