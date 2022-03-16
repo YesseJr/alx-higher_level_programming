@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A query with like
+A script that lists all State objects
 """
 if __name__ == '__main__':
     import sys
