@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A cript that lists all State objects that contain the letter a from the database hbtn_0e_6_usa
+A query with like
 """
 if __name__ == '__main__':
     import sys
