@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Takes in a URL and an email address, sends a POST request to the passed URL with the email as a parameter
+Sends a POST request to a given URL with a given email.
 """
 from sys import argv
 import requests
