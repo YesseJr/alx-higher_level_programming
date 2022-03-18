@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Displays the value of the X-Request-Id variable found in the header of the response
+Displays the value of the X-Request-Id header variable of a request to a given URL.
 """
 import sys
 import urllib.request
