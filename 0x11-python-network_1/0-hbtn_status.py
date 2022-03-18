@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """
-Fetches https://alx-intranet.hbtn.io/status and display a response
+    Module for getting the status of intranet.hbtn.io/status.
 """
 import urllib.request
-
 
 if __name__ == "__main__":
     try:
