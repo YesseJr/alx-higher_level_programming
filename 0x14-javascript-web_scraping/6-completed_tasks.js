@@ -1,16 +1,16 @@
 #!/usr/bin/node
 const request = require('request');
-request(process.argv[2], function (error, response, body) {
-  if (!error) {
+const url = process.argv[2];
+const newDict = {};
+request.get(url, function (err, response, body) {
+  if (err == null) {
     const todos = JSON.parse(body);
-    let completed = {};
-    todos.forEach((todo) => {
-      if (todo.completed && completed[todo.userId] === undefined) {
-        completed[todo.userId] = 1;
-      } else if (todo.completed) {
-        completed[todo.userId] += 1;
+    for (let i = 0; i < todos.length; i++) {
+      if (todos[i].completed === true) {
+        if (newDict[todos[i].userId] === undefined) { newDict[todos[i].userId] = 0; }
+        newDict[todos[i].userId] += 1;
       }
-    });
-    console.log(completed);
+    }
+    console.log(newDict);
   }
 });
