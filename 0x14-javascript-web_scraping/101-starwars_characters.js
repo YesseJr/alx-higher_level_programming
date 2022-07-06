@@ -8,7 +8,6 @@ request.get(url, function (err, response, body) {
     Characters(0, cha[0], cha, limit);
   }
 });
-
 function Characters (i, url, charList, limit) {
   if (i === limit) { return; }
   request.get(url, function (err, respinse, body) {
