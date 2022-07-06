@@ -1,11 +1,4 @@
 #!/usr/bin/node
-let id = process.argv[2];
-let url = 'http://swapi.co/api/films/' + id;
-const request = require('request');
-request(url, function (err, response, body) {
-  if (err) {
-    console.log(err);
-  } else #!/usr/bin/node
   const request = require('request');
   request('http://swapi.co/api/films/' + process.argv[2], function (err, resp, body) {
     if (err) {
